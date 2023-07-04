@@ -24,7 +24,7 @@ text-align: right;
 }
 
 .texttop {
-margin: 0;
+vertical-align: top;
 }
 
 .centerbutton {

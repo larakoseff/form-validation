@@ -35,23 +35,23 @@
     </select>    
 <br>
 <label for="zip code">ZIP code:</label>
-<input type="number" name="ZIP code" placeholder="ZIP code here">
+<input type="number" name="ZIP code" placeholder="ZIP code here" required>
 <br>
 <label for="email">Email:</label>
-<input type="text" name="email" placeholder="email here please">
+<input type="email" name="email" placeholder="email here please" required>
 <br>
-<label for="gender" class="checkbox">Sex:</label>
-    <input type="radio" name="gender" value="male">
+<label for="gender">Gender:<span aria-label="required"></span></label>
+    <input type="radio" required name="gender" value="male">
     <label for="male" class="smallfont">Male</label>
-    <input type="radio" name="gender" value="female">
+    <input type="radio" required name="gender" value="female">
     <label for="female" class="smallfont">Female</label>
-    <input type="radio" name="gender" value="other">
+    <input type="radio" required name="gender" required value="other">
     <label for="other" class="smallfont">Other</label>
     <br>
-    <label for="language">Language:</label>
-    <input type="checkbox" name="language" id="language" value="language">
+    <label for="language">Language:<span aria-label="required"></span></label>
+    <input type="checkbox" required name="language" id="english" value="english">
     <label for="language" class="smallfont">English</label>
-    <input type="checkbox" name="other" id="other" value="other">
+    <input type="checkbox" required name="language" id="other" value="other">
     <label for="language" class="smallfont">Other</label>
 <br>
 <label for="about" class="texttop">About:</label>
