@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formsubmit</title>
+</head>
+<body>
+    <h1>Registration form</h1>
+
+    <form action="https://formsubmit.co/larakoseff@gmail.com" method="post">
+
+<label for="customer">User ID:</label>
+<input type="userid" name="userid" id="userid" placeholder="User ID here please" required  minlength="5" maxlength="12">
+<br>
+<br>
+<label for="customer">Password:</label>
+<input type="text" name="password" id="password" placeholder="Password here please" required minlength="7" maxlength="12">
+<br>
+<br>
+<label for="customer">Name:</label>
+<input type="text" name="customer" placeholder="name here please" required>
+<br>
+<br>
+<label for="customer">Address</label>
+<input type="text" name="customer" placeholder="address here please">
+<br>
+<br>
+<label for="customer">Country:</label>
+   <select name="Country" required>
+        <option value="South Africa">South Africa</option>
+        <option value="Brazil">Brazil</option>
+        <option value="India">India</option>
+        <option value="South Korea">South Korea</option>
+        <option value="Mexico">Mexico</option>
+        <option value="Nigeria">Nigeria</option>
+    </select>    
+<br>
+<br>
+<label for="customer">Zip code:</label>
+<input type="number" name="customer" placeholder="ZIp code here">
+<br>
+<br>
+<label for="customer">Email:</label>
+<input type="text" name="customer" placeholder="email here please">
+<br>
+<br>
+<label for="customer">Sex:</label>
+    <input type="radio" name="gender" value="male">
+    <label for="gender">Male</label>
+    <input type="radio" name="gender" value="female">
+    <label for="gender">Female</label>
+    <input type="radio" name="gender" value="other">
+    <label for="gender">Other</label>
+    <br>
+    <br>
+    <label for="feedbackStatement">About:</label>
+        <textarea name="feedbackStatement" cols="50" rows="7"></textarea>
+    <br>
+    <br>
+    <input type="submit" name="submit" value="Submit Feedback">
+
+
+
+</form>
+    
+</body>
+</html>
