@@ -12,19 +12,19 @@
     <h1>Registration form</h1>
 <br>
 <form action="https://formsubmit.co/larakoseff@gmail.com" method="post">
- <label for="user id">User ID:</label>
+ <label for="user id">User ID:<span aria-label="required" class="smallfont2">*</span></label>
      <input type="userid" name="userid" id="userid" placeholder="User ID here please" required  minlength="5" maxlength="12">
 <br>
-<label for="password">Password:</label>
+<label for="password">Password:<span aria-label="required" class="smallfont2">*</span></label>
       <input type="text" name="password" id="password" placeholder="Password here please" required minlength="7" maxlength="12">
 <br>
-<label for="name">Name:</label>
-<input type="text" name="name" id="name" placeholder="name here please" required>
+<label for="name">Name:<span aria-label="required" class="smallfont2">*</span></label>
+<input type="text" name="name" id="name" placeholder="Name here please" required>
 <br>
 <label for="address">Address</label>
-<input type="text" name="address" placeholder="address here please">
+<input type="text" name="address" id="address" placeholder="Address here please">
 <br>
-<label for="country">Country:</label>
+<label for="country">Country:<span aria-label="required" class="smallfont2">*</span></label>
    <select name="Country" required>
         <option value="South Africa">South Africa</option>
         <option value="Brazil">Brazil</option>
@@ -34,13 +34,13 @@
         <option value="Nigeria">Nigeria</option>
     </select>    
 <br>
-<label for="zip code">ZIP code:</label>
+<label for="zip code">ZIP code:<span aria-label="required" class="smallfont2">*</span></label>
 <input type="number" name="ZIP code" placeholder="ZIP code here" required>
 <br>
-<label for="email">Email:</label>
-<input type="email" name="email" placeholder="email here please" required>
+<label for="email">Email:<span aria-label="required" class="smallfont2">*</span></label>
+<input type="email" name="email" placeholder="Email here please" required>
 <br>
-<label for="gender">Gender:<span aria-label="required"></span></label>
+<label for="gender">Gender:<span aria-label="required" class="smallfont2">*</span></label>
     <input type="radio" required name="gender" value="male">
     <label for="male" class="smallfont">Male</label>
     <input type="radio" required name="gender" value="female">
@@ -48,7 +48,7 @@
     <input type="radio" required name="gender" required value="other">
     <label for="other" class="smallfont">Other</label>
     <br>
-    <label for="language">Language:<span aria-label="required"></span></label>
+    <label for="language">Language:<span aria-label="required" class="smallfont2">*</span></label>
     <input type="checkbox" required name="language" id="english" value="english">
     <label for="language" class="smallfont">English</label>
     <input type="checkbox" required name="language" id="other" value="other">
@@ -60,5 +60,7 @@
     <br>
     <input type="submit" name="submit" value="Submit" class="centerbutton">
 </form>
+
+<p class="requiredfield">* Required field</p>
 </body>
 </html>

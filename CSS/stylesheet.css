@@ -19,12 +19,21 @@ label {
     display: inline-block;
 }
 
+.smallfont2 {
+    font-size: small;
+
+}
+
 .justifyright {
 text-align: right;
 }
 
 .texttop {
 vertical-align: top;
+}
+
+#name, #address {
+width: 300px;
 }
 
 .centerbutton {
@@ -34,6 +43,9 @@ font-family: Inter-semibold, sans-serif;
 margin-left: 7rem;
 }
 
-
+.requiredfield {
+    margin-left: 7rem;
+    font-size: small;
+}
 
 
